@@ -68,15 +68,5 @@ public class BookingController {
         return service.availability();
     }
 
-    @RequestMapping(value="/",produces=MediaType.TEXT_HTML_VALUE)
-    public String hello() {
-    	return "<!DOCTYPE html>"
-    			+ "<html><body>"
-    			+ "<b>Available urls</b>"
-    			+ "<p>/cadastro (post with json body)</p>"
-    			+ "<p>/login/email/password</p>"
-    			+ "<p>/perfil/userId</p>"
-    			+ "</body></html>";		
-    }
 }
 
